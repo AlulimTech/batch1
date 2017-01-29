@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script language="javascript">
+            var num1;
+            var num2;
+            var q;
+            var r;
+            function quotient()
+            {
+              alert("enter the two integers");
+              num1=prompt("first integer ");
+              num2=prompt("second integer");
+              q=parseInt(num1/num2);
+              document.write("quotient of "+num1+" and"+num2+" is"+q);
+            }
+            function remainder()
+            {
+             alert("enter the two integers");
+            num1=prompt("first integer");
+            num2=prompt("second integer");
+            r=parseInt(num1%num2); 
+            document.write("remainder of "+num1+" and"+num2+" is"+r);    
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="radio"name="quo"onclick=quotient()>Quotient of two integers
+            <br>
+            <input type="radio"name="quo"onclick=remainder()>remainder of two integers
+        </form>
+    </body>
+</html>
