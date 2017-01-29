@@ -1,0 +1,42 @@
+<html>
+     <head>
+         <script language="javascript">
+             var a=3,b=5 ;
+             var temp = 0;
+             function fun1()
+             {
+                 //alert("enter a and b");
+                 //a=prompt("enter a");
+                 //b=prompt("enter b");
+                 document.write("before swaping number are"+a+"and"+b+"<br>");
+                 temp=a;
+                 a=b;
+                 b=temp;
+                 document.write("after swaping number are"+a+"and"+b);
+              }
+             function fun2()
+             {
+                 document.write("before swaping numbers are"+a+"and"+b+"<br>");
+                 a= a+b;
+                 b= a-b;
+                 a= a-b;
+                 document.write("after swaping numbers are"+a+"and"+b+"<br>");
+             }
+             function fun3()
+             {
+                 document.write("berfore swaping numbers are"+a+"and"+b+"<br>"); 
+                 a = a^b;
+                 b = a^b;
+                 a = a^b;
+                 document.write("after swaping numbers are"+a+"and"+b+"<br>");             
+             }
+         </script>
+    </head>
+    <body>
+        <form>
+            <input type="radio"name="calc"onclick=fun1()>Swaping : with third variable<br>
+            <input type="radio"name="calc"onclick=fun2()>Swaping : without third variable<br>
+            <input type="radio"name="calc"onclick=fun3()>Swaping : using ex-or <br>
+        </form>
+    </body>
+</html>
